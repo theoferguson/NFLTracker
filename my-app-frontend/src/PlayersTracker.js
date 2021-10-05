@@ -3,9 +3,10 @@ import Card from './Card';
 
 function PlayersTracker({players}) {
 
-    const allPlayers = players.map(player => {
+    const allPlayers = players.map((player) => {
         return (
             <Card
+                className="card"
                 key={player.id}
                 team={player.team}
                 position={player.position}
