@@ -5,12 +5,14 @@ import Header from './Header';
 
 function App() {
   const [players, setPlayers] = useState([]);
+  const [issueRequest, setIssueRequest] = useState(false);
+
 
   useEffect(() => {
     fetch("http://localhost:9292/players")
     .then((r) => r.json())
     .then((players) => setPlayers(players));
-  }, []);
+  }, [issueRequest]);
 
   return (
     <div className="App">
