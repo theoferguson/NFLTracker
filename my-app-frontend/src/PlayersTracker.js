@@ -11,6 +11,7 @@ function PlayersTracker({ players }) {
             <Card
                 className="card"
                 key={player.id}
+                id={player.id}
                 player={player}
                 isOpen={isOpen}
                 setIsOpen={setIsOpen}
