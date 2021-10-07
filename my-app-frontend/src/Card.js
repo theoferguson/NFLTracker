@@ -1,6 +1,6 @@
 
 function Card(props) {
-    const { player, isOpen, setIsOpen, id } = props;
+    const { player, isOpen, setIsOpen, id, issueRequest, setIssueRequest } = props;
 
 
     const deletePlayer = (id) => {
@@ -9,7 +9,13 @@ function Card(props) {
         fetch(`http://localhost:9292/players/${id}`, {
             method: 'DELETE'
         })
+        .then(res => res.json())
+        .then(json => {
+            console.log(json)
+            setIssueRequest(!issueRequest)
+        })
     }
+
     return (
         <div>
             <span className="card">

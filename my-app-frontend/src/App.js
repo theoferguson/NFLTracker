@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PlayersTracker players={players} />
+      <PlayersTracker players={players} issueRequest={issueRequest} setIssueRequest={setIssueRequest} />
     </div>
   );
 }

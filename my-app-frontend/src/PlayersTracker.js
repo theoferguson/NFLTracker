@@ -3,7 +3,7 @@ import Card from './Card';
 import styled, { css } from "styled-components";
 import PlayerDetail from './PlayerDetail';
 
-function PlayersTracker({ players }) {
+function PlayersTracker({ players, issueRequest, setIssueRequest }) {
     const [isOpen, setIsOpen] = useState('');
 
     const allPlayers = players.map((player) => {
@@ -15,6 +15,8 @@ function PlayersTracker({ players }) {
                 player={player}
                 isOpen={isOpen}
                 setIsOpen={setIsOpen}
+                issueRequest={issueRequest}
+                setIssueRequest={setIssueRequest}
             />
         )
     })
