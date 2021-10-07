@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 
 function PlayerDetail({ isOpen, setIsOpen }) {
     const [player, setPlayer] = useState(null)
-    // debugger;
+
     useEffect(() => {
         fetch(`http://localhost:9292/players/${isOpen.id}`)
             .then((r) => r.json())

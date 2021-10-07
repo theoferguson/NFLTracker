@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header issueRequest={issueRequest} setIssueRequest={setIssueRequest} />
       <PlayersTracker players={players} issueRequest={issueRequest} setIssueRequest={setIssueRequest} />
     </div>
   );

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Card from './Card';
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import PlayerDetail from './PlayerDetail';
 
 function PlayersTracker({ players, issueRequest, setIssueRequest }) {
