@@ -23,14 +23,16 @@ function PlayersTracker({ players, issueRequest, setIssueRequest }) {
 
     return (
         <div className='Players'>
-            {allPlayers}
-            <ModalWrapper isOpen={isOpen} onClick={() => setIsOpen('')}>
-                <PlayerDetail
-                    isOpen={isOpen}
-                    setIsOpen={setIsOpen}
-                    >
+            <div className='background'>
+                {allPlayers}
+                <ModalWrapper isOpen={isOpen} onClick={() => setIsOpen('')}>
+                    <PlayerDetail
+                        isOpen={isOpen}
+                        setIsOpen={setIsOpen}
+                        >
                     </PlayerDetail>
-            </ModalWrapper>
+                </ModalWrapper>
+            </div>
         </div>
     )
 

@@ -7,6 +7,8 @@
   pointer-events: none;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -15,8 +17,11 @@
 
 .App-header {
   background-color: #282c34;
+  background-size: cover;
+  background-image: url("https://i.pinimg.com/originals/79/ea/e6/79eae60f1e4b247c88219f8caae89a42.jpg");
+
   /* min-height: 100vh; */
-  max-height: 100px;
+  max-height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,19 +30,25 @@
   color: white;
 }
 
+
+
 .text {
   color: black;
   font: bold;
 }
 
 .card {
-  background: lightblue;
+  background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   border-radius: 2px;
   margin: 5px 5px 20px 10px;
   width: calc(33.3333% - 70px); /* 1/3 minus the margins (20+20) */
   padding: 20px;
   text-align: center;
+  background-size: 25% ;
+  background-repeat: no-repeat;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/American_football.svg/2048px-American_football.svg.png");
+  
   /* color: white; */
   
   float: left;
