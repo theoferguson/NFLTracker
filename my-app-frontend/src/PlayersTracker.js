@@ -3,22 +3,27 @@ import Card from './Card';
 import styled from "styled-components";
 import PlayerDetail from './PlayerDetail';
 
-function PlayersTracker({ players, issueRequest, setIssueRequest }) {
-    const [isOpen, setIsOpen] = useState('');
 
-    const allPlayers = players.map((player) => {
-        return (
-            <Card
-                className="card"
-                key={player.id}
-                id={player.id}
-                player={player}
-                isOpen={isOpen}
-                setIsOpen={setIsOpen}
-                issueRequest={issueRequest}
-                setIssueRequest={setIssueRequest}
-            />
-        )
+
+
+function PlayersTracker({ players, issueRequest, setIssueRequest, setSearchTerm, searchTerm }) {
+    const [isOpen, setIsOpen] = useState('');
+            
+        const allPlayers = players.map((player) => {
+            return(
+                <main>
+                    <Card
+                        className="card"
+                        key={player.id}
+                        id={player.id}
+                        player={player}
+                        isOpen={isOpen}
+                        setIsOpen={setIsOpen}
+                        issueRequest={issueRequest}
+                        setIssueRequest={setIssueRequest}
+                    />
+                </main>
+            )   
     })
 
     return (

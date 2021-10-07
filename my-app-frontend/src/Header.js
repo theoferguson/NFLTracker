@@ -1,6 +1,8 @@
 import AddNewPlayer from "./AddNewPlayer";
+import Search from "./Search";
 
-function Header({issueRequest, setIssueRequest}) {
+
+function Header({ issueRequest, setIssueRequest, searchTerm, setSearchTerm,players}) {
 
     return (
         <div className="App-header">
@@ -9,6 +11,12 @@ function Header({issueRequest, setIssueRequest}) {
             <AddNewPlayer
             issueRequest={issueRequest}
             setIssueRequest={setIssueRequest}
+            />
+            <Search
+                className="search"
+                searchTerm={searchTerm}
+                setSearchTerm={setSearchTerm}
+
             />
         </div>
     )

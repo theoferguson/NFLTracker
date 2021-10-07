@@ -24,7 +24,6 @@ function Card(props) {
                 <p className="text"> {player.team.name} </p>
                 <p className="text"> {player.position.name} </p>
                 <button className="button" onClick={() => deletePlayer(id)}>X</button>
-
             </span>
         </div>
     )
