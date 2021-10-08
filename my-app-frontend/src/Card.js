@@ -19,7 +19,7 @@ function Card(props) {
     return (
         <div>
             <span className="card">
-                <button className="button" onClick={() => setIsOpen(player)}>Show</button>
+                <button className="button" onClick={() => setIsOpen(player)}>Show Details</button>
                 <p className="text"> {player.name} </p>
                 <p className="text"> {player.team.name} </p>
                 <p className="text"> {player.position.name} </p>

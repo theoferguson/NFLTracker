@@ -37,11 +37,11 @@ function AddNewPlayer({ issueRequest, setIssueRequest }) {
             <form>
                 <input onChange={handleChange} type="text" name="name" placeholder='name of player'></input>
                 <select name="team" onChange={handleChange}>
-                    <option selected="selected"></option>
+                    <option value="selected"></option>
                     {teamDropdown}
                 </select>
                 <select name="position" onChange={handleChange}>
-                    <option selected="selected"></option>
+                    <option value="selected"></option>
                     {positionDropdown}
                 </select>
                 <button onClick={handlePlayerSubmit} type="submit">Add Player</button>
